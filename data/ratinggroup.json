@@ -1,0 +1,79 @@
+{
+  "schema": {
+    "name": "ratinggroup",
+    "columnDefinitions": [
+      {
+        "name": "ratinggroup",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "charge",
+        "typeDefinition": "float",
+        "static": false
+      },
+      {
+        "name": "plan",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "plan_detail",
+        "typeDefinition": "varchar",
+        "static": false
+      },
+      {
+        "name": "provisoned_data",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "value_added_service",
+        "typeDefinition": "int",
+        "static": false
+      }
+    ],
+    "primaryKey": {
+      "partitionKey": ["ratinggroup"],
+      "clusteringKey": []
+    },
+    "tableOptions": {
+      "defaultTimeToLive": 0,
+      "clusteringExpression": []
+    }
+  },
+  "data": [
+    {
+      "ratinggroup": 10,
+      "provisoned_data": 500,
+      "value_added_service": 0,
+      "charge": 49.99,
+      "plan_detail": "basic 5G, unlimited voice, sms",
+      "plan": 1
+    },
+    {
+      "ratinggroup": 13,
+      "provisoned_data": 500,
+      "value_added_service": 3,
+      "charge": 54.99,
+      "plan_detail": "basic 5g, Gaming VR Package, unlimited voice, sms",
+      "plan": 1
+    },
+    {
+      "ratinggroup": 11,
+      "provisoned_data": 750,
+      "value_added_service": 1,
+      "charge": 69.99,
+      "plan_detail": "basic 5G, More Data, unlimited voice, sms",
+      "plan": 1
+    },
+    {
+      "ratinggroup": 12,
+      "provisoned_data": 500,
+      "value_added_service": 2,
+      "charge": 79.99,
+      "plan_detail": "basic 5g, league VR Package, unlimited voice, sms",
+      "plan": 1
+    }
+  ]
+}

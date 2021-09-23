@@ -1,0 +1,120 @@
+{
+  "data": {
+    "100002": {
+      "account#": "100002",
+      "accountSince": "2021-06-10 18:12:51",
+      "accountType": "Legacy",
+      "name": "Reed Peterson",
+      "networkSliceID": "50",
+      "ratingGroup": "12",
+      "services": {
+        "plan": {
+          "deviceImage": "https://images-na.ssl-images-amazon.com/images/I/71Ap5hKZoJL._AC_SL1500_.jpg",
+          "deviceName": "Google Pixel 4",
+          "deviceStatus": "owned",
+          "emmi": "MEMI1154313918",
+          "pSim": "71100124872725936F",
+          "phoneNumber": "+1 978-384-1231",
+          "service": "5G Wireless 500",
+          "subnetworkSliceID": "50-1a"
+        },
+        "subscription": {
+          "deviceImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F7%2F77%2FVR_Logo_Virtual_Reality_Logo.svg%2F1024px-VR_Logo_Virtual_Reality_Logo.svg.png&f=1&nofb=1",
+          "deviceName": "Facebook Oculus Rift S",
+          "deviceStatus": "owned",
+          "eSIM": "68100513481443281B",
+          "emmi": "MEMI13SAS839223112",
+          "service": "NFL VR Package",
+          "subnetworkSliceID": "50-1b"
+        }
+      }
+    },
+    "100001": {
+      "account#": "100001",
+      "accountSince": "2021-06-10 18:12:51",
+      "accountType": "New",
+      "name": "Mayur Sethi",
+      "networkSliceID": "50",
+      "ratingGroup": "13",
+      "services": {
+        "plan": {
+          "deviceImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-max-blue-hero?wid=470&hei=556&fmt=png-alpha&.v=1604021658000",
+          "deviceName": "Apple iPhone12 Pro Max",
+          "deviceStatus": "credit",
+          "emmi": "MEMI123981728",
+          "pSim": "891004234814455936F",
+          "phoneNumber": "+1 978-384-1231",
+          "service": "5G Wireless Unlimited",
+          "subnetworkSliceID": "50-1a"
+        },
+        "subscription": {
+          "deviceImage": "https://www.windowscentral.com/sites/wpcentral.com/files/field/image/2019/03/oculus-rift-s-crop-01.png?itok=CxJz8Sl_",
+          "deviceName": "Facebook Oculus Rift S",
+          "deviceStatus": "owned",
+          "eSIM": "89100423481445581A",
+          "emmi": "MEMI13SAS839223112",
+          "service": "VR GAMING Package",
+          "subnetworkSliceID": "50-1b"
+        }
+      }
+    },
+    "100003": {
+      "account#": "100003",
+      "accountSince": "2021-06-10 18:12:51",
+      "accountType": "New",
+      "name": "Patrick C",
+      "networkSliceID": "50",
+      "ratingGroup": "15",
+      "services": {
+        "plan": {
+          "deviceImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-max-blue-hero?wid=470&hei=556&fmt=png-alpha&.v=1604021658000",
+          "deviceName": "Apple iPhone12 Pro Max",
+          "deviceStatus": "credit",
+          "emmi": "MEMI123981728",
+          "pSim": "891004234814455936F",
+          "phoneNumber": "+1 978-384-1231",
+          "service": "5G Wireless Unlimited",
+          "subnetworkSliceID": "50-1a"
+        },
+        "subscription": {
+          "deviceImage": "https://www.windowscentral.com/sites/wpcentral.com/files/field/image/2019/03/oculus-rift-s-crop-01.png?itok=CxJz8Sl_",
+          "deviceName": "Facebook Oculus Rift S",
+          "deviceStatus": "owned",
+          "eSIM": "89100423481445581A",
+          "emmi": "MEMI13SAS839223112",
+          "service": "VR GAMING Package",
+          "subnetworkSliceID": "50-1b"
+        }
+      }
+    },
+    "100006": {
+      "account#": "100006",
+      "accountSince": "2021-06-10 18:12:51",
+      "accountType": "Legacy",
+      "name": "Mica",
+      "networkSliceID": "50",
+      "ratingGroup": "12",
+      "services": {
+        "plan": {
+          "deviceImage": "https://images-na.ssl-images-amazon.com/images/I/71Ap5hKZoJL._AC_SL1500_.jpg",
+          "deviceName": "Google Pixel 4",
+          "deviceStatus": "owned",
+          "emmi": "MEMI1154313918",
+          "pSim": "71100124872725936F",
+          "phoneNumber": "+1 978-384-1231",
+          "service": "5G Wireless 500",
+          "subnetworkSliceID": "50-1a"
+        },
+        "subscription": {
+          "deviceImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F7%2F77%2FVR_Logo_Virtual_Reality_Logo.svg%2F1024px-VR_Logo_Virtual_Reality_Logo.svg.png&f=1&nofb=1",
+          "deviceName": "Facebook Oculus Rift S",
+          "deviceStatus": "owned",
+          "eSIM": "68100513481443281B",
+          "emmi": "MEMI13SAS839223112",
+          "service": "NFL VR Package",
+          "subnetworkSliceID": "50-1b"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schema": {
+    "name": "daily_data_usage",
+    "keyspace": "telco_billing_ks",
+    "columnDefinitions": [
+      {
+        "name": "accountno",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "year",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "month",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "date",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "datausage",
+        "typeDefinition": "float",
+        "static": false
+      },
+      {
+        "name": "day",
+        "typeDefinition": "varchar",
+        "static": false
+      }
+    ],
+    "primaryKey": {
+      "partitionKey": ["accountno"],
+      "clusteringKey": ["year", "month", "date"]
+    },
+    "tableOptions": {
+      "defaultTimeToLive": 0,
+      "clusteringExpression": [
+        {
+          "order": "DESC",
+          "column": "year"
+        },
+        {
+          "order": "DESC",
+          "column": "month"
+        },
+        {
+          "order": "DESC",
+          "column": "date"
+        }
+      ]
+    }
+  },
+  "data": [
+    {
+      "date": 17,
+      "datausage": 24.0,
+      "month": 6,
+      "year": 2021,
+      "day": "T",
+      "accountno": 100001
+    },
+    {
+      "date": 16,
+      "datausage": 13.0,
+      "month": 6,
+      "year": 2021,
+      "day": "W",
+      "accountno": 100001
+    },
+    {
+      "date": 15,
+      "datausage": 19.0,
+      "month": 6,
+      "year": 2021,
+      "day": "T",
+      "accountno": 100001
+    },
+    {
+      "date": 14,
+      "datausage": 10.0,
+      "month": 6,
+      "year": 2021,
+      "day": "M",
+      "accountno": 100001
+    },
+    {
+      "date": 13,
+      "datausage": 43.0,
+      "month": 6,
+      "year": 2021,
+      "day": "S",
+      "accountno": 100001
+    },
+    {
+      "date": 12,
+      "datausage": 49.0,
+      "month": 6,
+      "year": 2021,
+      "day": "S",
+      "accountno": 100001
+    },
+    {
+      "date": 11,
+      "datausage": 32.0,
+      "month": 6,
+      "year": 2021,
+      "day": "F",
+      "accountno": 100001
+    },
+    {
+      "date": 10,
+      "datausage": 18.0,
+      "month": 6,
+      "year": 2021,
+      "day": "T",
+      "accountno": 100001
+    },
+    {
+      "date": 17,
+      "datausage": 16.0,
+      "month": 6,
+      "year": 2021,
+      "day": "T",
+      "accountno": 100002
+    },
+    {
+      "date": 16,
+      "datausage": 8.0,
+      "month": 6,
+      "year": 2021,
+      "day": "W",
+      "accountno": 100002
+    },
+    {
+      "date": 15,
+      "datausage": 12.0,
+      "month": 6,
+      "year": 2021,
+      "day": "T",
+      "accountno": 100002
+    },
+    {
+      "date": 14,
+      "datausage": 29.0,
+      "month": 6,
+      "year": 2021,
+      "day": "M",
+      "accountno": 100002
+    },
+    {
+      "date": 13,
+      "datausage": 35.0,
+      "month": 6,
+      "year": 2021,
+      "day": "S",
+      "accountno": 100002
+    },
+    {
+      "date": 12,
+      "datausage": 19.0,
+      "month": 6,
+      "year": 2021,
+      "day": "S",
+      "accountno": 100002
+    },
+    {
+      "date": 11,
+      "datausage": 23.0,
+      "month": 6,
+      "year": 2021,
+      "day": "F",
+      "accountno": 100002
+    },
+    {
+      "date": 10,
+      "datausage": 16.0,
+      "month": 6,
+      "year": 2021,
+      "day": "T",
+      "accountno": 100002
+    }
+  ]
+}

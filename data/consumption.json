@@ -1,0 +1,183 @@
+{
+  "shema": {
+    "name": "consumption",
+    "columnDefinitions": [
+      {
+        "name": "accountid",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "invocation_time",
+        "typeDefinition": "timestamp",
+        "static": false
+      },
+      {
+        "name": "datausage",
+        "typeDefinition": "float",
+        "static": false
+      },
+      {
+        "name": "end_time",
+        "typeDefinition": "timestamp",
+        "static": false
+      },
+      {
+        "name": "ratinggroup",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "sliceid",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "start_time",
+        "typeDefinition": "timestamp",
+        "static": false
+      }
+    ],
+    "primaryKey": {
+      "partitionKey": ["accountid"],
+      "clusteringKey": ["invocation_time"]
+    },
+    "tableOptions": {
+      "defaultTimeToLive": 0,
+      "clusteringExpression": [
+        {
+          "order": "DESC",
+          "column": "invocation_time"
+        }
+      ]
+    }
+  },
+  "data": [
+    {
+      "accountid": 1,
+      "start_time": {
+        "nano": 196000000,
+        "epochSecond": 1623413367
+      },
+      "sliceid": 100,
+      "end_time": {
+        "nano": 196000000,
+        "epochSecond": 1623413967
+      },
+      "ratinggroup": 12,
+      "datausage": 5.0,
+      "invocation_time": {
+        "nano": 196000000,
+        "epochSecond": 1623412767
+      }
+    },
+    {
+      "accountid": 1,
+      "start_time": {
+        "nano": 945000000,
+        "epochSecond": 1623413334
+      },
+      "sliceid": 100,
+      "end_time": {
+        "nano": 945000000,
+        "epochSecond": 1623413934
+      },
+      "ratinggroup": 12,
+      "datausage": 5.0,
+      "invocation_time": {
+        "nano": 945000000,
+        "epochSecond": 1623412734
+      }
+    },
+    {
+      "accountid": 1,
+      "start_time": {
+        "nano": 437000000,
+        "epochSecond": 1623413246
+      },
+      "sliceid": 100,
+      "end_time": {
+        "nano": 437000000,
+        "epochSecond": 1623413846
+      },
+      "ratinggroup": 12,
+      "datausage": 5.0,
+      "invocation_time": {
+        "nano": 437000000,
+        "epochSecond": 1623412646
+      }
+    },
+    {
+      "accountid": 1,
+      "start_time": {
+        "nano": 934000000,
+        "epochSecond": 1623405255
+      },
+      "sliceid": 100,
+      "end_time": {
+        "nano": 934000000,
+        "epochSecond": 1623405855
+      },
+      "ratinggroup": 11,
+      "datausage": 3.0,
+      "invocation_time": {
+        "nano": 933000000,
+        "epochSecond": 1623404655
+      }
+    },
+    {
+      "accountid": 1,
+      "start_time": {
+        "nano": 141000000,
+        "epochSecond": 1623349371
+      },
+      "sliceid": 100,
+      "end_time": {
+        "nano": 141000000,
+        "epochSecond": 1623349971
+      },
+      "ratinggroup": 11,
+      "datausage": 8.0,
+      "invocation_time": {
+        "nano": 141000000,
+        "epochSecond": 1623348771
+      }
+    },
+    {
+      "accountid": 1,
+      "start_time": {
+        "nano": 661000000,
+        "epochSecond": 1623349329
+      },
+      "sliceid": 100,
+      "end_time": {
+        "nano": 661000000,
+        "epochSecond": 1623349929
+      },
+      "ratinggroup": 11,
+      "datausage": 5.0,
+      "invocation_time": {
+        "nano": 661000000,
+        "epochSecond": 1623348729
+      }
+    },
+    {
+      "accountid": 1,
+      "start_time": {
+        "nano": 162000000,
+        "epochSecond": 1623349308
+      },
+      "sliceid": 100,
+      "end_time": {
+        "nano": 162000000,
+        "epochSecond": 1623349908
+      },
+      "ratinggroup": 12,
+      "datausage": 3.0,
+      "invocation_time": {
+        "nano": 162000000,
+        "epochSecond": 1623348708
+      }
+    }
+  ]
+}

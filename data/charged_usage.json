@@ -1,0 +1,149 @@
+{
+  "schema": {
+    "name": "charged_usage",
+    "columnDefinitions": [
+      {
+        "name": "accountno",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "year",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "month",
+        "typeDefinition": "int",
+        "static": false
+      },
+      {
+        "name": "datausage",
+        "typeDefinition": "float",
+        "static": false
+      },
+      {
+        "name": "month_name",
+        "typeDefinition": "varchar",
+        "static": false
+      }
+    ],
+    "primaryKey": {
+      "partitionKey": ["accountno"],
+      "clusteringKey": ["year", "month"]
+    },
+    "tableOptions": {
+      "defaultTimeToLive": 0,
+      "clusteringExpression": [
+        {
+          "order": "DESC",
+          "column": "year"
+        },
+        {
+          "order": "DESC",
+          "column": "month"
+        }
+      ]
+    }
+  },
+  "data": [
+    {
+      "month_name": "Jul-21",
+      "datausage": 221.0,
+      "month": 6,
+      "year": 2021,
+      "accountno": 100001
+    },
+    {
+      "month_name": "May-21",
+      "datausage": 187.0,
+      "month": 5,
+      "year": 2021,
+      "accountno": 100001
+    },
+    {
+      "month_name": "Apr-21",
+      "datausage": 289.0,
+      "month": 4,
+      "year": 2021,
+      "accountno": 100001
+    },
+    {
+      "month_name": "Mar-21",
+      "datausage": 102.0,
+      "month": 3,
+      "year": 2021,
+      "accountno": 100001
+    },
+    {
+      "month_name": "Feb-21",
+      "datausage": 169.0,
+      "month": 2,
+      "year": 2021,
+      "accountno": 100001
+    },
+    {
+      "month_name": "Jan-21",
+      "datausage": 240.0,
+      "month": 1,
+      "year": 2021,
+      "accountno": 100001
+    },
+    {
+      "month_name": "Dec-20",
+      "datausage": 439.0,
+      "month": 12,
+      "year": 2020,
+      "accountno": 100001
+    },
+    {
+      "month_name": "Jun-21",
+      "datausage": 312.0,
+      "month": 6,
+      "year": 2021,
+      "accountno": 100002
+    },
+    {
+      "month_name": "May-21",
+      "datausage": 216.0,
+      "month": 5,
+      "year": 2021,
+      "accountno": 100002
+    },
+    {
+      "month_name": "Apr-21",
+      "datausage": 186.0,
+      "month": 4,
+      "year": 2021,
+      "accountno": 100002
+    },
+    {
+      "month_name": "Mar-21",
+      "datausage": 286.0,
+      "month": 3,
+      "year": 2021,
+      "accountno": 100002
+    },
+    {
+      "month_name": "Feb-21",
+      "datausage": 412.0,
+      "month": 2,
+      "year": 2021,
+      "accountno": 100002
+    },
+    {
+      "month_name": "Jan-21",
+      "datausage": 373.0,
+      "month": 1,
+      "year": 2021,
+      "accountno": 100002
+    },
+    {
+      "month_name": "Dec-20",
+      "datausage": 303.0,
+      "month": 12,
+      "year": 2020,
+      "accountno": 100002
+    }
+  ]
+}
