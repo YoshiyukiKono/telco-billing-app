@@ -1,7 +1,6 @@
 {
   "schema": {
     "name": "daily_data_usage",
-    "keyspace": "telco_billing_ks",
     "columnDefinitions": [
       {
         "name": "accountno",

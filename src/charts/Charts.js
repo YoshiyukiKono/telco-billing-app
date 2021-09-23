@@ -1,5 +1,5 @@
 import './charts.css'
-import { AreaChart, Area, XAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,BarChart, Bar } from 'recharts';
+import { AreaChart, Area, XAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import axios from "axios"
 import { useState,useEffect } from "react"
 

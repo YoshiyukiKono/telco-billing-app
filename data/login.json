@@ -1,0 +1,39 @@
+{
+  "schema": {
+    "name": "login",
+    "columnDefinitions": [
+      {
+        "name": "username",
+        "typeDefinition": "varchar",
+        "static": false
+      },
+      {
+        "name": "account",
+        "typeDefinition": "int",
+        "static": false
+      }
+    ],
+    "primaryKey": {
+      "partitionKey": ["username"],
+      "clusteringKey": []
+    },
+    "tableOptions": {
+      "defaultTimeToLive": 0,
+      "clusteringExpression": []
+    }
+  },
+  "data": [
+    {
+      "account": 100003,
+      "username": "davidj"
+    },
+    {
+      "account": 100002,
+      "username": "reedp"
+    },
+    {
+      "account": 100001,
+      "username": "mayurs"
+    }
+  ]
+}

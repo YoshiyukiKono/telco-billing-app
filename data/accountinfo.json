@@ -1,4 +1,7 @@
 {
+  "schema": {
+    "collectionName": "sag_account_info"
+  },
   "data": {
     "100002": {
       "account#": "100002",

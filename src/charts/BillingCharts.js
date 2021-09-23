@@ -1,5 +1,5 @@
 import './billingchart.css'
-import { Pie,PieChart,Cell, XAxis,LabelList, CartesianGrid, Tooltip, Legend, ResponsiveContainer,BarChart, Bar } from 'recharts';
+import { Pie, PieChart, Cell, ResponsiveContainer } from 'recharts';
 import axios from "axios"
 import { useState,useEffect } from "react"
 

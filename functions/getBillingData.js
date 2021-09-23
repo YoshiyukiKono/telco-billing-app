@@ -1,36 +1,20 @@
-const { createClient } = require("@astrajs/rest");
-const { ContactsOutlined } = require("@material-ui/icons");
+const { getAstraRestClient, getRestPath } = require("./utils/astraClient");
 
-exports.handler = async function(event,context) {
-
-  const ratingGroup = event.queryStringParameters.ratingGroup;
-  console.log(ratingGroup)
-  // create an {astra_db} client
-  const astraClient = await createClient({
-    astraDatabaseId: process.env.ASTRA_DB_ID,
-    astraDatabaseRegion: process.env.ASTRA_DB_REGION,
-    applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
-  });
-
-  // collections are created automatically
-  // const accountCollection = astraClient.namespace(process.env.ASTRA_DB_KEYSPACE).collection("accountinfo");
-  const basePath = `/api/rest/v2/keyspaces/${process.env.ASTRA_DB_KEYSPACE}/ratinggroup`
-
-  try{
-    // const result = await accountCollection.find()
-    const {data,status} = await astraClient.get(`${basePath}/${ratingGroup}`);
-    console.log(data)
+exports.handler = async function (event, context) {
+  let ratingGroup = event.queryStringParameters.ratingGroup ?? "";
+  const astraClient = await getAstraRestClient();
+  const path = getRestPath("/ratinggroup");
+  try {
+    const { data, status } = await astraClient.get(`${path}/${ratingGroup}`);
     return {
       statusCode: status,
       body: JSON.stringify(data),
     };
-  } catch(e) {
+  } catch (e) {
     console.error(e);
     return {
       statusCode: 500,
       body: JSON.stringify(e),
-    }
+    };
   }
-
-  
-}
+};
