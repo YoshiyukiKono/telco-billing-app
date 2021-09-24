@@ -1,7 +1,7 @@
 const { getAstraRestClient, getRestPath } = require("./utils/astraClient");
 
 exports.handler = async function (event, context) {
-  let ratingGroup = event.queryStringParameters.ratingGroup ?? "";
+  let ratingGroup = event.queryStringParameters.ratingGroup;
   const astraClient = await getAstraRestClient();
   const path = getRestPath("/ratinggroup");
   try {

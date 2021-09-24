@@ -1,6 +1,6 @@
 <!--- STARTEXCLUDE --->
 # Telco Billing App
-*30 minutes, Advanced, [Start Building](https://github.com/DataStax-Examples/telco-billing-app/blob/master/README.md#quick-start)*
+*30 minutes, Advanced, [Start Building](https://github.com/DataStax-Examples/telco-billing-app/blob/master/README.md#quick-start), [View Demo](https://sag-telco-billing-app.netlify.app)*
 
 An example of a telcom app dashboard, built with [React](https://reactjs.org/) and [Netlify](https://www.netlify.com).
 <!--- ENDEXCLUDE --->
@@ -22,4 +22,4 @@ An example of a telcom app dashboard, built with [React](https://reactjs.org/) a
 Launch and explore an example of a telco app dashboard in [Gitpod](https://www.gitpod.io/), built with [React](https://reactjs.org/) and [Netlify](https://www.netlify.com).
   
 ## How this works
-Opening and running the app will populate the database you specify in your `.env` file with the required data, allowing you to explore the telco app.
+Opening and running the app will populate the database you specify in your `.env` file with the required data, allowing you to explore the telco app. You can view a demo of the running app [here](https://sag-telco-billing-app.netlify.app).

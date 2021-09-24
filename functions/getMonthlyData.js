@@ -1,7 +1,7 @@
 const { getAstraRestClient, getRestPath } = require("./utils/astraClient");
 
 exports.handler = async function (event, context) {
-  const account = event.queryStringParameters.account ?? "";
+  const account = event.queryStringParameters.account;
   const astraClient = await getAstraRestClient();
   const path = getRestPath("/charged_usage");
   try {

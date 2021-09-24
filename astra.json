@@ -6,6 +6,7 @@
   "githubUrl": "https://github.com/DataStax-Examples/telco-billing-app",
   "heroImage": "https://raw.githubusercontent.com/DataStax-Examples/telco-billing-app/master/hero.png",
   "gitpodUrl": "https://gitpod.io/#https://github.com/DataStax-Examples/telco-billing-app",
+  "demoUrl": "https://sag-telco-billing-app.netlify.app/",
   "tags": [
     { "name": "javascript" },
     { "name": "react" },
