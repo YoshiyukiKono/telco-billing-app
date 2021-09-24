@@ -1,48 +1,25 @@
-# Prerequisites
+<!--- STARTEXCLUDE --->
+# Telco Billing App
+*30 minutes, Advanced, [Start Building](https://github.com/DataStax-Examples/telco-billing-app/blob/master/README.md#quick-start)*
 
-## Initialize the database
-In Astra, create a database with a keyspace called `telco_billing_ks` and initialize the schema with the schema definitions in [schema.cql](schema.cql).  Also generate a token for a db administrator for that database.  Download the secure bundle for that database in the Connect screen.
+An example of a telcom app dashboard, built with React and Netlify.
+<!--- ENDEXCLUDE --->
 
-## Configure the local environment
-Configure the following:
-- Copy [.env.example](.env.example) to `.env` and then configure the Astra database ID, token, and region
-- [load-table.sh](load-table.sh) with the path to dsbulk 1.8.0, the path to the secure bundle, and the database credentials.
+![image](https://raw.githubusercontent.com/DataStax-Examples/telco-billing-app/master/hero.png)
 
-## Load the data
-Run the [load-data.sh](load-data.sh) script to load the data into your database.
+## Quick Start
+<!--- STARTEXCLUDE --->
+* <a href="https://dtsx.io/2YNyxJT" target="_blank">Signup for DataStax Astra</a>, or login to your already existing account. 
+* <a href="https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/GETTING_STARTED.md" target="_blank">Create an Astra DB Database</a> if you don't already have one.
+<!--- ENDEXCLUDE --->
+* <a href="https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/GETTING_STARTED.md" target="_blank">Create an Astra DB Keyspace</a> called `sag_telco_billing` in your database.
+* <a href="https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/GETTING_STARTED.md" target="_blank">Generate an Application Token</a> with the role of `Database Administrator` for the Organization that your Astra DB is in.
+* Click the 'Open in Gitpod' link: <br/><a href="https://gitpod.io/#https://github.com/DataStax-Examples/telco-billing-app" target="_blank"><img src="https://camo.githubusercontent.com/76e60919474807718793857d8eb615e7a50b18b04050577e5a35c19421f260a3/68747470733a2f2f676974706f642e696f2f627574746f6e2f6f70656e2d696e2d676974706f642e737667" alt="Open in IDE" data-canonical-src="https://gitpod.io/button/open-in-gitpod.svg" style="max-width: 100%;"></a>
+* Once the app is finished launching in the Gitpod IDE, copy the `env.example` file to a file named `.env` and fill the required values in from your Application Token and <a href="https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/GETTING_STARTED.md" target="_blank">Astra DB connection settings</a>.
+* Start the example by running `npm run dev` in the Gitpod console.
 
-## Prepare your environment with software dependencies
-
-### Install the following:
-
-[npm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-[netlify](https://docs.netlify.com/cli/get-started/):
-```
-npm install netlify-cli -g
-```
-
-[axios](https://www.npmjs.com/package/axios):
-```
-npm install axios -g
-```
-
-[@astrajs/rest](https://www.npmjs.com/package/@astrajs/rest):
-```
-npm install @astrajs/rest -g
-```
-
-[@astrajs/collections](https://www.npmjs.com/package/@astrajs/collections):
-```
-npm install @astrajs/collections -g
-```
-
-# Build and run
-
-## Initialize the application with:
-
-```
-netlify dev
-```
-
-Go to browser at [http://localhost:8888/login](http://localhost:8888/login).
+## Objectives
+Launch and explore an example of a telco app dashboard in Gitpod, built with React and Netlify.
+  
+## How this works
+Opening and running the app will populate the database you specify in your `.env` file with the required data, allowing you to explore the telco app.
