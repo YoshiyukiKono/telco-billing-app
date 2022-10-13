@@ -23,7 +23,8 @@
     "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "node data/_load.js && netlify dev"
+    "dev": "node data/_load.js && netlify dev",
+    "netlify": "netlify dev"
   },
   "eslintConfig": {
     "extends": [

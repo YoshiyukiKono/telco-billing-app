@@ -15,19 +15,53 @@ export default function FeaturedInfoHome() {
   const fetchMonthlyUsage = async () => {
     const account = window.location.search
     const results = await axios.get(`/.netlify/functions/getMonthlyData${account}`)
-    setmonthlyUsage(Object.values(results)[0][0].datausage)
+    console.log(results)
+    if (results.data.length != 0) {
+      setmonthlyUsage(Object.values(results)[0][0].datausage)
+    }
   }
 
   const fetchDailyUsage = async () => {
     const account = window.location.search
     const results = await axios.get(`/.netlify/functions/getDailyData${account}`)
-    setdailyUsage(Object.values(results)[0][0].datausage)
+    console.log(results)
+    console.log(Object.values(results))
+    if (results.data.length != 0) {
+      setdailyUsage(Object.values(results)[0][0].datausage)
+    } else {
+      setdailyUsage(0)
+    }
   }
 
+  /**
   useEffect(() => {
     fetchDailyUsage()
     fetchMonthlyUsage()
   }, [])
+  */
+  useEffect(() => {
+      
+    //const tick = () => { callbackRef.current() } 
+    //const id = setInterval(tick, 1000);
+    //const id = setInterval(callback, 1000);
+    fetchMonthlyUsage()
+    const id = setInterval(() => {
+      fetchDailyUsage()
+      //fetchMonthlyUsage()
+    }, 1000);
+    return () => {
+      clearInterval(id);
+    };
+  }, []);//refはミュータブルなので依存配列に含めなくてもよい
+
+
+  const useIntervalBy1s = (callback: () => void) => {
+    //const callbackRef = useRef<() => void>(callback);
+    //useEffect(() => {
+    //  callbackRef.current = callback; // 新しいcallbackをrefに格納！
+    //}, [callback]);
+  };
+
 
   return (
     <div className="featured">

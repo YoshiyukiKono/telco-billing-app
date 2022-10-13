@@ -14,7 +14,13 @@ export default function Charts() {
   }
 
   useEffect(() => {
-    fetchDailyData()
+    //fetchDailyData()
+    const id = setInterval(() => {
+      fetchDailyData()
+    }, 1000);
+    return () => {
+      clearInterval(id);
+    };
   }, [])
   return (
     <div className="chart">
